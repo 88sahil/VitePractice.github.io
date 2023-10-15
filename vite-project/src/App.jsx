@@ -16,7 +16,7 @@ export const App = () => {
   }
 
   function removeValue(){
-
+    clearInterval(se)
   }
   return (
     <div>
