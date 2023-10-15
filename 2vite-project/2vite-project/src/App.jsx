@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import './App.css'
+import Card from './components/Card'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className='shadow rounded-2xl p-4'>
-          <h1 className='text-yellow'>Hello sahil</h1>
+      <div>
+        <Card/>
       </div>
     </>
   )
