@@ -8,10 +8,10 @@ export const App = () => {
   function addvalue(){
     if(clock==true)
       {
-       setInterval.current =  setInterval(()=>{
-        counter = counter+1
-        setcounter(counter)
-      },1000)
+      //  setInterval.current =  setInterval(()=>{
+      //   counter = counter+1
+      //   setcounter(counter)
+      // },1000)
     }
   }
 
