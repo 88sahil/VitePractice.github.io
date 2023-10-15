@@ -19,7 +19,7 @@ export const App = () => {
     clearInterval(se)
   }
   return (
-    <div>
+    <div class="cont">
       <h1>counter is : {counter}</h1>
       <button onClick={addvalue}>Add value</button>
       <button onClick={removeValue}>Remove value</button>
