@@ -4,11 +4,16 @@ import Card from './components/Card'
 
 function App() {
   const [count, setCount] = useState(0)
-
+const myobj ={
+  name:'sahil',
+  surname:'maliya'
+}
+let src = ['https://imgs.search.brave.com/cu9Tj1j9X3ikCtsd7VDLKwbzrduMU4kQnzqpbvLIjtU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/YS1kcm9wLW9mLXBp/bmstYW5kLXllbGxv/dy1wYWludC1pbi13/YXRlci5qcGc_d2lk/dGg9MTAwMCZmb3Jt/YXQ9cGpwZyZleGlm/PTAmaXB0Yz0w','https://imgs.search.brave.com/eQiyHnGIZitZZvE2umYt_ReH6OD5YLimXEuQpk9aRyY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOC8w/MS8xNC8yMy8xMi9u/YXR1cmUtMzA4Mjgz/Ml82NDAuanBn']
   return (
     <>
       <div>
-        <Card/>
+        <Card src =  {src[0]} />
+        <Card src= {src[1]}/>
       </div>
     </>
   )
