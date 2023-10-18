@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
+import useCurrencyInfo from './hooks/useCurrency'
+import Input from './components/Input'
 const App = () => {
   return (
-    <div className='div1  flex justify-center  w-full bg-gray-500 h-60 text-center'>
-      <div className='div2 h-28 w-28 bg-black '>
-
-      </div>
-    </div>
+   <div className=' main w-full  flex justify-center bg-green-500'>
+     <Input/>
+   </div>
   )
 }
 
