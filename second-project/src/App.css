@@ -5,3 +5,6 @@
 .textbox{
     width: 500px;
 }
+.btn:active{
+    scale: .98;
+}

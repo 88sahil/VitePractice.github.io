@@ -1,8 +1,6 @@
 import React from 'react'
 import {useState,useCallback,useEffect,useRef} from 'react'
 import './App.css'
-
-
 const App = () => {
 const [length,setlength] = useState(8)
 const [numbersAl,setnumberAl] = useState(false)
@@ -35,10 +33,10 @@ const Copy = useCallback(()=>{
    
    <div className='w-full  min-w-md bg-black '>
     <div className='div2 bg-gray-500 w-full '>
-      <h1 className='nan text-white text-center text-3xl p-5'>passwordgenerator</h1>
+      <h1 className='nan text-white text-center text-3xl p-5'>password generator</h1>
       <div className='flex justify-center pb-11'>
         <input type='text' className='textbox pl-2 py-4 shadow-md ' placeholder='password' id="passwordarea" value={pass} readOnly ref={passref}></input>
-        <button className='py-4 bg-blue-600 px-8 text-teal-100 shadow-md' onClick={Copy}>Copy</button>
+        <button className='btn py-4 bg-blue-600 px-8 text-teal-100 shadow-md' onClick={Copy}>Copy</button>
       </div>
       <div className='flex justify-center pb-4'>
         <input type="range" min={8} max={100} onChange={(e)=>{setlength(e.target.value)}}></input>
