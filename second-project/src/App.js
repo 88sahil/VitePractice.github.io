@@ -8,8 +8,7 @@ const App = () => {
     <div className='flex flex-wrap'>
       {Person.map(i=>(
         <Card
-          name={i.name}
-          age={i.age}
+          background={i.background}
         />
 ))}
 </div>
