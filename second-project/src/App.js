@@ -4,7 +4,6 @@ import './App.css'
 
 
 const App = () => {
-  let textare = document.getElementById("passwordarea")
 const [length,setlength] = useState(8)
 const [numbersAl,setnumberAl] = useState(false)
 const [charAl,setcharAl] = useState(false)
