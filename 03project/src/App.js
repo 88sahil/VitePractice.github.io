@@ -20,7 +20,7 @@ const App = () => {
     setconvertedamount(amount * currencyInfo[to])
   }
   return (
-   <div className=' main w-full  flex justify-center flex-wrap flex-col bg-green-500'>
+   <div className=' main w-full  flex justify-center flex-wrap flex-col' style={{backgroundImage:`url(https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)`}}>
                <form
                     onSubmit={(e) => {
                         e.preventDefault();
@@ -28,7 +28,8 @@ const App = () => {
                        
                     }}
                 ></form>
-     <div className='mb-4 relative'>
+      <div className='div1 p-4'>
+      <div className='relative'>
       <Input
         label={from}
         amount={amount}
@@ -37,8 +38,11 @@ const App = () => {
         selectcurrency={from} 
         onAmountchange={(amount)=>setamount(amount)}
       />
-     </div>
-     <button onClick={swap} className='absolute px-2 py-3 mb-12 shadow-md-white bg-blue-600 rounded-md'>swap</button>
+       </div>
+       <div className='flex justify-center m-2'>
+       <button onClick={swap} className='px-3 py-2 text-black bg-blue-600 rounded-md'>swap</button>
+       </div>
+        
      <div>
       <Input
         label={to}
@@ -49,8 +53,13 @@ const App = () => {
         amountdisable
       />
      </div>
-     <button onClick={convert} className='w-60 bg-blue-600 mt-6 py-2 rounded-none'>Convert {from} to {to}</button>
+     <div className='m-3 flex justify-center'>
+     <button onClick={convert} className='w-60 bg-blue-600  py-2 rounded-md '>Convert {from} to {to}</button>
+     </div>
+     
    </div>
+</div>
+     
   )
 }
 
