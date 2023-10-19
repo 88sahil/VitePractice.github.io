@@ -6,6 +6,9 @@ const App = () => {
   return (
     <>
       <Header/>
+    
+      <Footer/>
+      
     </>
   )
 }
