@@ -1,14 +1,15 @@
 import React from 'react'
+import { Link,NavLink } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import { Outlet } from 'react-router-dom'
 const App = () => {
   return (
     <>
-      <Header/>
-    
-      <Footer/>
-      
+    <Header/>
+    <Outlet/>
+    <Footer/>  
     </>
   )
 }
