@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React, { createContext, useContext } from "react";
 
-export const ThemeContext = useContext({
+export const ThemeContext = createContext({
     thememode:"light",
     darkmode:()=>{},
     lightmode:()=>{}
