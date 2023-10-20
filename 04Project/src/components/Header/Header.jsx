@@ -4,7 +4,8 @@ import { Navs } from './Nav'
 
 const Header = () => {
   return (
-    <nav className='flex w-full sticky shadow-md justify-between pl-2 py-2'>
+   <header >
+     <nav className='flex w-full sticky shadow-md justify-between pl-2 py-2'>
         <Link to="/" className='flex items-center order-1'>
             <a className='text-2xl font-extrabold'>Your <span className='text-red-500'>Logo<sup>&#9415;</sup></span></a>
         </Link>
@@ -28,6 +29,7 @@ const Header = () => {
             }
         </ul>
     </nav>
+   </header>
   )
 }
 

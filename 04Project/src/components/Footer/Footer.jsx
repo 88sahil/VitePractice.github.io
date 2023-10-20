@@ -3,7 +3,8 @@ import {Link,NavLink} from 'react-router-dom'
 import { Navs } from '../Header/Nav'
 const Footer = () => {
   return (
-    <footer className='w-full shadow-black flex justify-around'>
+    <footer className='w-full shadow-black flex justify-around p-4 border-t border-gray-500 '>
+
       <div>
         <Link to="/" className='flex items-center'>
             <a className='text-3xl font-extrabold' >Your <span className='text-red-500'>Logo<sup>&#9415;</sup></span></a>
