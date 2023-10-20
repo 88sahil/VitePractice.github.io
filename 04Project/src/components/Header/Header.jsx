@@ -14,12 +14,12 @@ const Header = () => {
                 <button className=' bg-gray-500 py-2 px-3 text-white shadow-md rounded-md text-[10px]'>Sign Up</button>
             </Link>
         </div>
-        <ul className='flex gap-3 order-2'>
+        <ul className='flex gap-5 order-2 '>
             {
                 Navs.map((items)=>(
                     <li className=''>
                         <NavLink to={items.to} className={({isActive})=>
-                             `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                             `block py-2 text-[15px] pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                         }>
                             {items.label}
                         </NavLink>
