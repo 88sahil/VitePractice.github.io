@@ -35,6 +35,20 @@ const App = () => {
     }
     console.log(item)
   }
+  function handledelete(index){
+    const updateditem = item.filter((ele)=>{
+      return index !== ele.id
+    });
+    setitem(updateditem)
+  }
+  function handeledit(){
+      let edititem = item.find((ele)=>{
+        return ele.id === id;
+      });
+      setTitle(edititem.name)
+      setdiscri(edititem.discriprition)
+      se
+  }
   return (
     <>
     <div className='flex px-4 gap-4 w-auto flex-col justify-center items-center text-left shadow-md pb-5'>
@@ -72,8 +86,8 @@ const App = () => {
                        
                   </div>
                   <div className='flex items-center'>
-                  <button className='bg-blue-500 px-2 py-1 text-white rounded-lg '>Edit</button>
-                       <button className='bg-red-600 ml-2 px-2 py-1 text-white rounded-lg'>Delete</button>
+                  <button className='bg-blue-500 px-2 py-1 text-white rounded-lg ' onClick={()=>handeledit(ele.id)}>Edit</button>
+                       <button className='bg-red-600 ml-2 px-2 py-1 text-white rounded-lg' onClick={()=>handledelete(ele.id)}>Delete</button>
                   </div>
                  
               </div>
