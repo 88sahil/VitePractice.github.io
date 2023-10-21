@@ -5,6 +5,9 @@ import { useState } from 'react'
 const App = () => {
   const [Title,setTitle] = useState("")
   const [discri,setdiscri] = useState("")
+  const [shownew,setshownew]  = useState(true)
+  const [showform,setshowform] = useState(true)
+  const [showedit,setshowedit]  =  useState(true)
   const [item,setitem] = useState(
     [
       {
