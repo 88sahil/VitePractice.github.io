@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* In your custom CSS file */
+@layer utilities {
+  .border-gradient {
+    border:  3px solid rgb(29, 44, 16);
+  }
+}
