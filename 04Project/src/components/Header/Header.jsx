@@ -10,7 +10,7 @@ const Header = () => {
             <a className='text-2xl font-extrabold'>Your <span className='text-red-500'>Logo<sup>&#9415;</sup></span></a>
         </Link>
         <div className='flex order-3 mr-5'>
-            <Link link="/" className='flex items-center gap-3'>
+            <Link to="/" className='flex items-center gap-3'>
                 <button className=' bg-gray-500 py-2 px-3 text-white shadow-md rounded-md text-[10px]'>Sign In</button>
                 <button className=' bg-gray-500 py-2 px-3 text-white shadow-md rounded-md text-[10px]'>Sign Up</button>
             </Link>
