@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
         <div className='flex gap-7 mr-8'>
           <Link to="/login"><button className='bg-orange-500 px-2 rounded-xl text-white shadow active:scale-90'>Login</button></Link>
-          <Link to="/Cart" className='flex'><a className='flex'><img src={Cart} alt="cart" className='h-8 w-8 relative z-10'></img></a><div className='flex justify-center items-center rounded-full h-4 w-4 text-white text-[10px] bg-red-600 absolute ml-6 z-20'>{counter}</div></Link>
+          <Link to="/Cart" className='flex'><img src={Cart} alt="cart" className='h-8 w-8 relative z-10'></img><div className='flex justify-center items-center rounded-full h-4 w-4 text-white text-[10px] bg-red-600 absolute ml-6 z-20'>{counter}</div></Link>
         </div>
       </nav>
    </header>

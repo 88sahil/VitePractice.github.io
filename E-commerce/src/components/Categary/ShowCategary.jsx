@@ -21,6 +21,8 @@ const ShowCategary = (props) => {
                 newprice ={item.new_price}
                 oldprice ={item.old_price}
               />)
+            }else{
+              return null
             }
           })
         }

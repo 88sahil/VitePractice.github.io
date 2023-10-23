@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer'
 import man_banner from './assets/banner_mens.png'
 import woman_banner from './assets/banner_women.png'
 import kids_banner from './assets/banner_kids.png'
+import SignIn from './components/Login/SignIn'
 const App = () => {
   return (
     <BrowserRouter>
@@ -22,7 +23,9 @@ const App = () => {
       <Route path='/product' element={<Product/>}>
           <Route path=':productId' element={<Product/>}></Route>
       </Route>
-      <Route path='/login' element={<Login/>}></Route>
+      <Route path='/login' element={<Login/>}>
+      </Route>
+      <Route path='/signin' element={<SignIn/>}></Route>
       <Route path='/product' element={<Product/>}></Route>
       <Route path='/Cart' element={<Cart/>}></Route>
     </Routes>
