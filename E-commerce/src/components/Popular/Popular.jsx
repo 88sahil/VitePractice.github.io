@@ -12,7 +12,7 @@ const Popular = () => {
             data_product.map((ele,index)=>{
                return(
                 <Item 
-                id={index}
+                key={index}
                 name={ele.name}
                 image ={ele.image}
                 newprice ={ele.new_price}

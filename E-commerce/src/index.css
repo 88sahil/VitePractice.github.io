@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+}
+.offers-div-1 ,.Nl-div-1{
+    background: rgb(213,191,215);
+    background: linear-gradient(0deg, rgba(213,191,215,1) 45%, rgba(221,153,255,1) 88%);
+}
