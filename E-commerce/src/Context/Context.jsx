@@ -1,15 +1,15 @@
 import { createContext } from "react";
 import React from "react";
 import all_product from '../assets/all_product'
-export const shopcontext  = createContext("")
+export const Shopcontext  = createContext("")
 
-const shopcontextProvider =(props)=>{
+const ShopcontextProvider =(props)=>{
     const contaxvalue ={all_product}
     return(
-        <shopcontext.Provider value={contaxvalue}>
+        <Shopcontext.Provider value={contaxvalue}>
             {props.children}
-        </shopcontext.Provider>
+        </Shopcontext.Provider>
     )
 }
 
-export default shopcontextProvider
+export default ShopcontextProvider
