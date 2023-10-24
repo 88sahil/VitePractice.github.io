@@ -15,13 +15,18 @@ const Navbar = () => {
                 <a className='font-extrabold text-3xl'>Food<span className='text-red-500'>Hut</span></a>
             </div>
             </Link>
-            <div className='flex gap-4 items-center'>
+            <div className='flex gap-6 items-center'>
                 {
                     Navs.map((ele)=>{
                        return (
                                 <NavLink to={ele.to} className={({isActive})=>
                                 `block py-2 text-lg pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                                }>{ele.title}</NavLink>
+                                }>
+                                    <div className='flex items-center gap-1'>
+                                    <img src={ele.src} alt="search" className='h-5'></img>
+                                    <a>{ele.title}</a>
+                                    </div>
+                                </NavLink>
                              )
                     })
                 }

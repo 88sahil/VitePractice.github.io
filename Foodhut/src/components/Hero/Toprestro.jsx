@@ -25,7 +25,7 @@ const Toprestro = () => {
                                     <p className='font-bold'>{ele.name}</p>
                                     <div className='flex gap-1 items-center'>
                                         <img src={star} alt="star" className='w-4 h-4'></img>
-                                        <a>{Number(ele.rating)}</a>
+                                        <a>{Number(ele.rating)}/5</a>
                                     </div>
                                     <div className='flex gap-1 flex-wrap'>
                                         {

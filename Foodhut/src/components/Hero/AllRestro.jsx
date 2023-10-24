@@ -16,13 +16,13 @@ const AllRestro = () => {
                            <Link to={`/Restro/${ele.id}`}>
                            <div className='w-52 hover:scale-105 duration-200'>
                                 <div>
-                                    <img src={ele.bg} alt="nologo" className='w-52 h-44 rounded-lg'></img>
+                                    <img src={ele.bg} alt="nologo" className='w-52 h-44 rounded-lg object-fit'></img>
                                 </div>
                                 <div className='mt-2'>
                                     <p className='font-bold'>{ele.name}</p>
                                     <div className='flex gap-1 items-center'>
                                         <img src={star} alt="star" className='w-4 h-4'></img>
-                                        <a>{Number(ele.rating)}</a>
+                                        <a>{Number(ele.rating)}/5</a>
                                     </div>
                                     <div className='flex gap-1 flex-wrap'>
                                         {

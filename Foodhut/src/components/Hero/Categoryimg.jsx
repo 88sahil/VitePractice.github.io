@@ -3,8 +3,8 @@ import { categoris } from '../../assets/Categories/Category'
 import { Link } from 'react-router-dom'
 const Categoryimg = () => {
   return (
-    <div className='mt-16 border-b border-black/40 pb-4 mx-16'>
-        <p className='flex w-72  justify-center ml-4 text-2xl font-extrabold'>What's in your mind?</p>
+    <div className='mt-16 border-b border-black/40 pb-4 mx-12'>
+        <a className='border-b-2 border-black text-3xl font-bold'>What's in your mind?</a>
        <div className=' flex gap-8 justify-center mt-12 overflow-x-auto'>
        {
             categoris.map((ele)=>{
