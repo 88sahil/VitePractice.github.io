@@ -15,6 +15,7 @@ const ShowCategary = (props) => {
           all_product.map((item,index)=>{
             if(item.category===props.category){
              return (<Item
+                id={item.id}
                 key={index}
                 image={item.image}
                 name={item.name}
