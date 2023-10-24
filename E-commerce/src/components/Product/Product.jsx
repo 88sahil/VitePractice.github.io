@@ -15,6 +15,8 @@ const Product = () => {
         name ={product.name}
       />
       <ProductDisplay
+        product ={product}
+        id={product.id}
         image={product.image}
         name={product.name}
         oldprice = {product.old_price}

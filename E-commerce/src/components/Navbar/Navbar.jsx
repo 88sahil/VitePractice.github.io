@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Logo from '../../assets/logo_big.png'
 import Cart  from '../../assets/cart_icon.png'
 import './Navbar.css'
 import {Link,NavLink} from 'react-router-dom'
+import { Shopcontext } from '../../Context/Context'
 const Navbar = () => {
   const [menu,setmenu] = useState("shop")
   const [counter,setcounter] = useState(0)
+  const {count} = useContext(Shopcontext)
   return (
    <>
    <header>
@@ -23,7 +25,7 @@ const Navbar = () => {
         </div>
         <div className='flex gap-7 mr-8'>
           <Link to="/login"><button className='bg-orange-500 px-2 rounded-xl text-white shadow active:scale-90'>Login</button></Link>
-          <Link to="/Cart" className='flex'><img src={Cart} alt="cart" className='h-8 w-8 relative z-10'></img><div className='flex justify-center items-center rounded-full h-4 w-4 text-white text-[10px] bg-red-600 absolute ml-6 z-20'>{counter}</div></Link>
+          <Link to="/Cart" className='flex'><img src={Cart} alt="cart" className='h-8 w-8 relative z-10'></img><div className='flex justify-center items-center rounded-full h-4 w-4 text-white text-[10px] bg-red-600 absolute ml-6 z-20'>{count}</div></Link>
         </div>
       </nav>
    </header>

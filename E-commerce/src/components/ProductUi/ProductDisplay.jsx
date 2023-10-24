@@ -1,13 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import ReactStars from 'react-rating-star-with-type'
 import Starts from './Starts'
+import { Shopcontext } from '../../Context/Context'
 const ProductDisplay = (props) => {
+    const {product} = props
+    const {addtocart} = useContext(Shopcontext)
     const [size,setsize] = useState("")
   return (
     <div className='mt-8 p-8'>
         <div className='flex gap-8'>
             <div>
-                <img src={props.image} alt="item"></img>
+                <img src={product.image} alt="item"></img>
             </div>
             <div className='flex justify-start'>
                 <div>
@@ -15,11 +18,11 @@ const ProductDisplay = (props) => {
                     <Starts/>
                     <div className='flex gap-4 mt-8'>
                     <a className='line-through text-gray-400 text-xl'>&#36;
-                        {props.oldprice}
+                        {product.old_price}
                     </a>
                     <a className='text-red-500 font-extrabold text-xl'>
                         &#36;
-                        {props.newprice}
+                        {product.new_price}
                     </a>
                     </div>
                     <p className='mt-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, placeat!</p>
@@ -50,7 +53,7 @@ const ProductDisplay = (props) => {
                         </div>
                         </div>
                     <div className='mt-6'>
-                        <button className='bg-red-500 text-white w-48 py-2 shadow-md'>Add To Cart</button>
+                        <button className='bg-red-500 text-white w-48 py-2 shadow-md' onClick={()=>{addtocart(product.id)}} >Add To Cart</button>
                     </div>
                     </div>
                 </div>
