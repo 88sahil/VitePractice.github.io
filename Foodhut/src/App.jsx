@@ -9,6 +9,7 @@ import Menu from './assets/Menu/Menu'
 import RestroInfo from './components/restroInfo/RestroInfo'
 import Search from './components/Search/Search'
 import Add from './components/Additems/Add'
+import Footer from './components/Footer/Footer'
 const App = () => {
   return (
     <BrowserRouter>
@@ -27,6 +28,7 @@ const App = () => {
           <Route path=':RestroId' element={<RestroInfo/>}></Route>
         </Route>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
