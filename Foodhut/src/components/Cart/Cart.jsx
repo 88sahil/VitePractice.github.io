@@ -3,7 +3,7 @@ import { FoodhutContext } from '../../Context/FoodhutContect'
 
 const Cart = () => {
   const {Menu,addtocart,removetocart,cart,totalamount} = useContext(FoodhutContext)
-  const tax = totalamount()*0.05
+  const tax = Math.floor(totalamount()*0.05)
   return (
     <div className='flex justify-center mt-10 gap-10'>
         <div className='shadow-xl p-8'>
@@ -11,8 +11,8 @@ const Cart = () => {
           Menu.map((ele)=>{
             if(Number(cart[ele.id])>0){
               return(
-                <div className='flex items-center gap-8'>
-                  <div className='mt-4 flex items-center gap-4  '>
+                <div className='flex items-center gap-16'>
+                  <div className='mt-4 flex items-center gap-4 w-80 '>
                   <img src={ele.image} className='h-24 w-36 rounded-xl'></img>
                   <a className='font-bold'>{ele.name}</a>
                   </div>

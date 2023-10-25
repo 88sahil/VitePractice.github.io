@@ -84,7 +84,7 @@ const Restaurant =[
         category:["Gujarati","chinese"],
     },
     { id:15,
-        name:"Tea Port",
+        name:"Tea Post",
         bg:"https://media.istockphoto.com/id/1319384876/photo/indian-chai-in-glass-cups-with-metal-kettle-and-other-masalas-to-make-the-tea.jpg?s=612x612&w=0&k=20&c=p6KPEgUIvvH68uvK8CfPur-pzP5d8TArg4Qd8ZAkskw=",
         rating:"4.2",
         category:["Beverages","fastfood"],

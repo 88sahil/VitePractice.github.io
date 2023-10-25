@@ -53,11 +53,11 @@ const RestroInfo = () => {
                       return(
                         <div className='flex justify-center mt-4'>
                           <div key={index} className='mt-4 w-8/12  flex justify-between border-b border-gray-700 pb-8 '>
-                          <div>
+                          <div className='w-7/12'>
                               <img src={veg} className='h-5 w-5'></img>
-                              <p>{ele.name}</p>
-                              <p>&#8377;{ele.price}</p>
-                              <p>{ele.discri}</p>
+                              <p className='font-extrabold'>{ele.name}</p>
+                              <p className='text-red-600 font-bold'>&#8377;{ele.price}</p>
+                              <p className='flex flex-wrap'>{ele.discri}</p>
                           </div>
                           <div className='flex'>
                             <img src={ele.image} className='h-[100px] w-[150px] rounded-xl relative'></img>
