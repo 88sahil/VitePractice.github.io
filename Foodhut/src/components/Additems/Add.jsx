@@ -6,29 +6,24 @@ const Add = () => {
     const [name,setname] = useState("")
     const [image,setimage] = useState("")
     const [rating,setrating] = useState("")
-    const [item,setitem] = useState({
-        id:"",
-        name:"",
-        bg:"",
-        rating:"",
-        category:"food"
-    })
-
+    
     const add = ()=>{
-        if(!name && !image && ! rating){
+        if(!name && !image && !rating){
             alert("pleace fill data")
+        }else{
+            const newItem ={
+                id: new Date().getTime().toString(),
+                name:name,
+                bg:image,
+                rating:rating,
+                category:["food"]
+            }
+            setaddrestro([...addrestro,newItem])
+            
         }
-            setitem({
-            id: new Date().getTime().toString(),
-            name:`${name}`,
-            bg:`${image}`,
-            rating:`${rating}`,
-            category:"food"
-        })
-
-        setaddrestro({...addrestro,item})
-        console.log(data)
-    }
+        console.log(addrestro)
+        }
+           
   return (
     <div className='mt-16'>
         <div className='flex justify-center'>

@@ -3,14 +3,14 @@ import star from '../../assets/Images/star.png'
 import { FoodhutContext } from '../../Context/FoodhutContect'
 import {Link} from 'react-router-dom'
 const AllRestro = () => {
-    const {Restaurant} = useContext(FoodhutContext)
+    const {Restaurant,addrestro} = useContext(FoodhutContext)
   return (
     <div>
         <div>
             <a className='text-2xl font-bold ml-10 border-b-2 pb-1 border-black '>All Restaurant in Your City</a>
             <div className='flex gap-12 px-8 mt-10 flex-wrap justify-center'>
             {
-                Restaurant.map((ele)=>{
+                addrestro.map((ele)=>{
                     return(
                         <div>
                            <Link to={`/Restro/${ele.id}`}>

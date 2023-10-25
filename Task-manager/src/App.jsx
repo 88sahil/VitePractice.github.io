@@ -45,7 +45,7 @@ const App = () => {
       setshowdelete(true)
     }
     else{
-        const newItem = {
+          newItem = {
           id:new Date().getTime().toString(),
           title:title,
           desc:desc

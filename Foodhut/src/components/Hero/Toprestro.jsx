@@ -3,8 +3,8 @@ import { FoodhutContext } from '../../Context/FoodhutContect'
 import star from '../../assets/Images/star.png'
 import { Link } from 'react-router-dom';
 const Toprestro = () => {
-    const {Restaurant} = useContext(FoodhutContext);
-    const toprestro = Restaurant.filter((ele)=>{
+    const {Restaurant,addrestro} = useContext(FoodhutContext);
+    const toprestro = addrestro.filter((ele)=>{
         return Number(ele.rating)>=4
     })
     console.log(toprestro)
