@@ -11,7 +11,7 @@ const Toprestro = () => {
   return (
     <div className='p-8'>
         <p className='text-3xl font-extrabold'>Top Restaurant in your City</p>
-        <div className='flex gap-8 px-8 mt-4 flex-wrap'>
+        <div className='flex gap-8 px-8 mt-4 flex-wrap justify-center   '>
             {
                 toprestro.map((ele)=>{
                     return(

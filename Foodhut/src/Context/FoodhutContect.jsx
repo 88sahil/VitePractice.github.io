@@ -4,7 +4,10 @@ export const FoodhutContext = createContext("")
 
 const FoodhutContextProvider =(props)=>{
     const [count,setcount] = useState(0)
-    const contaxvalue = {Restaurant,count}
+
+    const [addrestro,setaddrestro] = useState(Restaurant)
+
+    const contaxvalue = {Restaurant,count,addrestro,setaddrestro}
     
     return(
         

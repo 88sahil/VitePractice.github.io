@@ -86,7 +86,7 @@ const Restaurant =[
     { id:15,
         name:"Tea Port",
         bg:"https://media.istockphoto.com/id/1319384876/photo/indian-chai-in-glass-cups-with-metal-kettle-and-other-masalas-to-make-the-tea.jpg?s=612x612&w=0&k=20&c=p6KPEgUIvvH68uvK8CfPur-pzP5d8TArg4Qd8ZAkskw=",
-        rating:"3.3",
+        rating:"4.2",
         category:["Beverages","fastfood"],
     },
     {
@@ -114,7 +114,7 @@ const Restaurant =[
         id:19,
         name:"Odd Even",
         bg:"https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=600",
-        rating:"3.3",
+        rating:"4.3",
         category:["Pizzas","Burgeers"],
     }, {
         id:20,
@@ -133,7 +133,7 @@ const Restaurant =[
         id:22,
         name:"Xero Degrees",
         bg:"https://images.pexels.com/photos/5419336/pexels-photo-5419336.jpeg?auto=compress&cs=tinysrgb&w=600",
-        rating:"3.3",
+        rating:"4.3",
         category:["Patas","Burgers"],
     }, 
     {

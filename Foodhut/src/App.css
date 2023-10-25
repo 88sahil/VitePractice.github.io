@@ -1,0 +1,8 @@
+.offer-div::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    display:none;
+}
+.ct-1::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    display: none;
+}

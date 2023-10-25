@@ -15,7 +15,7 @@ const Navbar = () => {
                 <a className='font-extrabold text-3xl'>Food<span className='text-red-500'>Hut</span></a>
             </div>
             </Link>
-            <div className='flex gap-6 items-center'>
+            <div className='flex gap-6 items-center max-md:hidden'>
                 {
                     Navs.map((ele)=>{
                        return (
@@ -33,6 +33,8 @@ const Navbar = () => {
             </div>
             <div className='flex items-center gap-3 mr-10'>
                 <Link to="/Login"><button className='bg-red-500 px-3 text-sm py-2 text-white rounded-lg'>Login</button></Link>
+                <Link to="/Add"><button className='bg-red-500 px-3 text-sm py-2 text-white rounded-lg'>Add</button></Link>
+
                 <Link to="/cart">
                 <div>
                     <img src={cart} alt="cart" className='w-6 h-6 relative'></img>
