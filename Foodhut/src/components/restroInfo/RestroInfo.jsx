@@ -57,7 +57,7 @@ const RestroInfo = () => {
                               <img src={veg} className='h-5 w-5'></img>
                               <p className='font-extrabold'>{ele.name}</p>
                               <p className='text-red-600 font-bold'>&#8377;{ele.price}</p>
-                              <p className='flex flex-wrap'>{ele.discri}</p>
+                              <p className='flex flex-wrap text-justify'>{ele.discri}</p>
                           </div>
                           <div className='flex'>
                             <img src={ele.image} className='h-[100px] w-[150px] rounded-xl relative'></img>
