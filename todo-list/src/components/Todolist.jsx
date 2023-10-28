@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useTodo } from '../contexts/TodoContext'
 
 const Todolist = ({todo}) => {
-    const [todomsg,settodomsg] = useState("");
+    const [todomsg,settodomsg] = useState(todo.todo);
     const [iseditable,setiseditable] = useState(false)
     const {removetodos,togglecomplete,updatetodos} = useTodo()
     const edittodo = ()=>{
